@@ -8,6 +8,7 @@ namespace ThirdTry
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             // first
@@ -26,7 +27,6 @@ namespace ThirdTry
 
             //third
             // ебу рот этой хуйне блядской сука
-            Console.WriteLine($"result = {result * -1}");
             //end
 
             Console.ReadKey(true);
