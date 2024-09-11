@@ -26,9 +26,16 @@ namespace ThirdTry
             //end
 
             //third
-            // ебу рот этой хуйне блядской сука
+            /*
+            int final = result;
+            char[] intArray = final;
+            intArray.Reverse();
+            Array.Reverse(intArray);
+            string reversedint = final(intArray);
+            Console.Write($"Reversed result is : {reversedint} ");
+            */
             //end
-
+            
             Console.ReadKey(true);
         }
     }
