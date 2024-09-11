@@ -34,6 +34,7 @@ namespace ThirdTry
             }
             Console.WriteLine($"Результат в зворотньому порядку  = {reversedResult}");
             Console.ReadKey(true);
+            //The end
         }
     }
 }
