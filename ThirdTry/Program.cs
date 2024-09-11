@@ -22,20 +22,17 @@ namespace ThirdTry
             int b = 8;
             double result;
             result = ((Math.Pow(a + b, 4)) - (Math.Pow(a, 4)) + 4 * (Math.Pow(a, 3)) * b + 6 * (Math.Pow(a, 2)) * (Math.Pow(b, 2))) / ((Math.Pow(b, 2)) * 4 * a + (Math.Pow(b, 4)));
-            Console.WriteLine($"result = {result}");
+            Console.WriteLine($"Результат = {result}");
             //end
 
             //third
-            /*
-            int final = result;
-            char[] intArray = final;
-            intArray.Reverse();
-            Array.Reverse(intArray);
-            string reversedint = final(intArray);
-            Console.Write($"Reversed result is : {reversedint} ");
-            */
-            //end
-            
+            string resultString = result.ToString();
+            string reversedResult = "";
+            for (int i = resultString.Length - 1; i >= 0; i--)
+            {
+                reversedResult += resultString[i];
+            }
+            Console.WriteLine($"Результат в зворотньому порядку  = {reversedResult}");
             Console.ReadKey(true);
         }
     }
