@@ -26,6 +26,13 @@ namespace ThirdTry
             //end
 
             //third
+            Console.WriteLine("Трьохзначне число, та воно-ж в зворотному порядку:");
+            int input, output;
+            input = Convert.ToInt32(Console.ReadLine());
+            output = (input % 10 * 100 + (input % 100 / 10 * 10) + (input / 100));
+            Console.WriteLine($"{input} --> {output}");
+
+            /*
             string resultString = result.ToString();
             string reversedResult = "";
             for (int i = resultString.Length - 1; i >= 0; i--)
@@ -33,7 +40,9 @@ namespace ThirdTry
                 reversedResult += resultString[i];
             }
             Console.WriteLine($"Результат в зворотньому порядку  = {reversedResult}");
-            Console.ReadKey(true);
+            Я МАССІВ ВИВІВ
+            */
+            Console.ReadKey();
             //The end
         }
     }
