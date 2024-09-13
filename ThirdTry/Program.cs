@@ -26,7 +26,7 @@ namespace ThirdTry
             //end
 
             //third
-            Console.WriteLine("Трьохзначне число, та воно-ж в зворотному порядку:");
+            Console.WriteLine("Виведення трьохзначного числа в зворотному порядку:");
             int input, output;
             input = Convert.ToInt32(Console.ReadLine());
             output = (input % 10 * 100 + (input % 100 / 10 * 10) + (input / 100));
