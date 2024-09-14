@@ -21,7 +21,7 @@ namespace ThirdTry
             int a = 3;
             int b = 8;
             double result;
-            result = ((Math.Pow(a + b, 4)) - (Math.Pow(a, 4)) + 4 * (Math.Pow(a, 3)) * b + 6 * (Math.Pow(a, 2)) * (Math.Pow(b, 2))) / ((Math.Pow(b, 2)) * 4 * a + (Math.Pow(b, 4)));
+            result = (Math.Pow(a + b, 4) - (Math.Pow(a, 4) + 4 * Math.Pow(a, 3) * b + 6 * Math.Pow(a, 2) * Math.Pow(b, 2))) / (4 * a * Math.Pow(b, 3) + Math.Pow(b, 4));
             Console.WriteLine($"Результат = {result}");
             //end
 
@@ -31,6 +31,7 @@ namespace ThirdTry
             input = Convert.ToInt32(Console.ReadLine());
             output = (input % 10 * 100 + (input % 100 / 10 * 10) + (input / 100));
             Console.WriteLine($"{input} --> {output}");
+            //end
 
             /*
             string resultString = result.ToString();
@@ -40,7 +41,6 @@ namespace ThirdTry
                 reversedResult += resultString[i];
             }
             Console.WriteLine($"Результат в зворотньому порядку  = {reversedResult}");
-            Я МАССІВ ВИВІВ
             */
             Console.ReadKey();
             //The end
